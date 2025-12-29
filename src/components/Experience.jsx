@@ -91,12 +91,12 @@ const Experience = () => {
     <section id="experience" className="section-padding relative overflow-hidden">
       {/* Floating Elements */}
       <motion.div
-        className="absolute top-40 right-10 w-20 h-20 bg-pink-300/20 bg-pink-500/10 rounded-full blur-xl"
+        className="absolute top-40 right-10 w-20 h-20 bg-pink-500/10 rounded-full blur-xl"
         animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
         transition={{ duration: 6, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-40 left-10 w-32 h-32 bg-rose-300/20 bg-rose-500/10 rounded-full blur-xl"
+        className="absolute bottom-40 left-10 w-32 h-32 bg-rose-500/10 rounded-full blur-xl"
         animate={{ y: [0, 30, 0], x: [0, -20, 0] }}
         transition={{ duration: 8, repeat: Infinity }}
       />
@@ -177,9 +177,9 @@ const Experience = () => {
                           {exp.projects.map((project, projectIndex) => (
                             <div
                               key={projectIndex}
-                              className="rounded-xl p-4 border border-pink-200/50 border-gray-700/50 bg-white bg-gray-800/50"
+                              className="rounded-xl p-4 border border-gray-700/50 bg-gray-800/50"
                             >
-                              <h4 className="font-semibold text-pink-600 text-pink-400 mb-2 flex items-center gap-2">
+                              <h4 className="font-semibold text-pink-400 mb-2 flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-gradient-to-br from-pink-400 to-rose-500" />
                                 {project.name}
                               </h4>
@@ -187,7 +187,7 @@ const Experience = () => {
                                 {project.tasks.map((task, taskIndex) => (
                                   <li
                                     key={taskIndex}
-                                    className="flex items-start gap-2 text-gray-700 text-gray-400 text-sm"
+                                    className="flex items-start gap-2 text-gray-400 text-sm"
                                   >
                                     <svg className="w-4 h-4 text-pink-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -204,7 +204,7 @@ const Experience = () => {
                           {exp.responsibilities.map((resp, respIndex) => (
                             <motion.li
                               key={respIndex}
-                              className="flex items-start gap-3 text-gray-700 text-gray-400"
+                              className="flex items-start gap-3 text-gray-400"
                               initial={{ opacity: 0, x: -20 }}
                               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                               transition={{ delay: 0.8 + index * 0.2 + respIndex * 0.1 }}

@@ -127,7 +127,7 @@ const Projects = () => {
                 transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
               >
                 {/* Project Image Header */}
-                <div className="relative h-48 bg-white bg-gray-700 overflow-hidden border-b border-pink-200/50 border-gray-600">
+                <div className="relative h-48 bg-gray-700 overflow-hidden border-b border-gray-600">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -136,8 +136,8 @@ const Projects = () => {
                   />
 
                   {/* Year Badge */}
-                  <div className="absolute top-4 right-4 px-4 py-2 bg-white/90 bg-gray-900/90 backdrop-blur-sm rounded-full shadow-sm">
-                    <span className="text-gray-700 text-gray-200 text-sm font-medium">{project.year}</span>
+                  <div className="absolute top-4 right-4 px-4 py-2 bg-gray-900/90 backdrop-blur-sm rounded-full shadow-sm">
+                    <span className="text-gray-200 text-sm font-medium">{project.year}</span>
                   </div>
                 </div>
 
@@ -146,11 +146,11 @@ const Projects = () => {
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-pink-500  transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-pink-500 text-pink-400 text-sm font-semibold mb-3 flex items-center gap-2">
+                  <p className="text-pink-400 text-sm font-semibold mb-3 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-pink-500 rounded-full" />
                     {project.role}
                   </p>
-                  <p className="text-gray-600 text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4">
                     {project.description}
                   </p>
 
@@ -159,13 +159,13 @@ const Projects = () => {
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1.5 bg-white bg-gray-700/50 text-gray-600 text-gray-300 text-xs rounded-full font-medium border border-pink-200/50 border-gray-600"
+                        className="px-3 py-1.5 bg-gray-700/50 text-gray-300 text-xs rounded-full font-medium border border-gray-600"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="px-3 py-1.5 bg-white bg-gray-800 text-gray-500 text-xs rounded-full border border-pink-200/50 border-gray-700">
+                      <span className="px-3 py-1.5 bg-gray-800 text-gray-500 text-xs rounded-full border border-gray-700">
                         +{project.technologies.length - 3}
                       </span>
                     )}
@@ -197,7 +197,7 @@ const Projects = () => {
 
             {/* Modal Content */}
             <motion.div
-              className="relative bg-white bg-gray-800 rounded-2xl overflow-hidden shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="relative bg-gray-800 rounded-2xl overflow-hidden shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
@@ -206,7 +206,7 @@ const Projects = () => {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 bg-gray-900/90 rounded-full flex items-center justify-center text-gray-600 text-gray-300 hover:text-pink-500 transition-colors shadow-lg"
+                className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-900/90 rounded-full flex items-center justify-center text-gray-300 hover:text-pink-500 transition-colors shadow-lg"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -214,7 +214,7 @@ const Projects = () => {
               </button>
 
               {/* Image */}
-              <div className="relative h-64 bg-gray-100 bg-gray-700 border-b border-gray-200 border-gray-600">
+              <div className="relative h-64 bg-gray-700 border-b border-gray-600">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -235,12 +235,12 @@ const Projects = () => {
                   {selectedProject.title}
                 </h3>
 
-                <p className="text-pink-500 text-pink-400 font-semibold mb-4 flex items-center gap-2">
+                <p className="text-pink-400 font-semibold mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 bg-pink-500 rounded-full" />
                   {selectedProject.role}
                 </p>
 
-                <p className="text-gray-600 text-gray-300 leading-relaxed mb-6">
+                <p className="text-gray-300 leading-relaxed mb-6">
                   {selectedProject.description}
                 </p>
 
@@ -250,7 +250,7 @@ const Projects = () => {
                     {selectedProject.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="px-4 py-2 bg-gray-100 bg-gray-700 text-gray-700 text-gray-300 text-sm rounded-full font-medium border border-gray-200 border-gray-600"
+                        className="px-4 py-2 bg-gray-700 text-gray-300 text-sm rounded-full font-medium border border-gray-600"
                       >
                         {tech}
                       </span>

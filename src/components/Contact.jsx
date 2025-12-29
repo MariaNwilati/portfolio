@@ -133,7 +133,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Let's Work <span className="text-gradient">Together</span>
           </h2>
-          <p className="text-gray-600 text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part
             of your vision. Feel free to reach out!
           </p>
@@ -165,8 +165,8 @@ const Contact = () => {
                           {info.icon}
                         </motion.div>
                         <div>
-                          <p className="text-pink-500 text-gray-400 text-sm font-medium">{info.label}</p>
-                          <p className="text-gray-600 text-white group-hover:text-pink-500 transition-colors">
+                          <p className="text-gray-400 text-sm font-medium">{info.label}</p>
+                          <p className="text-white group-hover:text-pink-500 transition-colors">
                             {info.value}
                           </p>
                         </div>
@@ -192,8 +192,8 @@ const Contact = () => {
                         {info.icon}
                       </motion.div>
                       <div>
-                        <p className="text-pink-500 text-gray-400 text-sm font-medium">{info.label}</p>
-                        <p className="text-gray-600 text-white">{info.value}</p>
+                        <p className="text-gray-400 text-sm font-medium">{info.label}</p>
+                        <p className="text-white">{info.value}</p>
                       </div>
                     </motion.div>
                   )}
@@ -207,7 +207,7 @@ const Contact = () => {
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: 0.8 }}
               >
-                <p className="text-gray-500 text-gray-400 text-sm mb-4">Or find me on social media</p>
+                <p className="text-gray-400 text-sm mb-4">Or find me on social media</p>
                 <div className="flex gap-4">
                   {['LinkedIn', 'Email'].map((social, index) => (
                     <motion.a
@@ -215,7 +215,7 @@ const Contact = () => {
                       href={social === 'LinkedIn' ? 'https://linkedin.com/in/maria-nwilat-9071b9353' : 'mailto:maria.nw205@gmail.com'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="card w-12 h-12 flex items-center justify-center text-pink-500 text-gray-300 hover:text-pink-600"
+                      className="card w-12 h-12 flex items-center justify-center text-gray-300 hover:text-pink-500"
                       whileHover={{ y: -5, scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, y: 20 }}
@@ -249,7 +249,7 @@ const Contact = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 0.4 }}
                 >
-                  <label htmlFor="name" className="block text-gray-700 text-gray-300 font-medium mb-2">
+                  <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
                     Your Name
                   </label>
                   <motion.input
@@ -258,7 +258,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-pink-200/50 border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-gray-700 text-white placeholder-gray-300 placeholder-gray-500 bg-white bg-gray-800"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-white placeholder-gray-500 bg-gray-800"
                     placeholder="John Doe"
                     whileFocus={{ scale: 1.01 }}
                   />
@@ -269,7 +269,7 @@ const Contact = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 0.5 }}
                 >
-                  <label htmlFor="email" className="block text-gray-700 text-gray-300 font-medium mb-2">
+                  <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
                     Your Email
                   </label>
                   <motion.input
@@ -278,7 +278,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-pink-200/50 border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-gray-700 text-white placeholder-gray-300 placeholder-gray-500 bg-white bg-gray-800"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-white placeholder-gray-500 bg-gray-800"
                     placeholder="john@example.com"
                     whileFocus={{ scale: 1.01 }}
                   />
@@ -289,7 +289,7 @@ const Contact = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 0.55 }}
                 >
-                  <label htmlFor="title" className="block text-gray-700 text-gray-300 font-medium mb-2">
+                  <label htmlFor="title" className="block text-gray-300 font-medium mb-2">
                     Subject
                   </label>
                   <motion.input
@@ -298,7 +298,7 @@ const Contact = () => {
                     name="title"
                     value={formData.title}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-pink-200/50 border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-gray-700 text-white placeholder-gray-300 placeholder-gray-500 bg-white bg-gray-800"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-white placeholder-gray-500 bg-gray-800"
                     placeholder="Message subject"
                     whileFocus={{ scale: 1.01 }}
                   />
@@ -309,7 +309,7 @@ const Contact = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <label htmlFor="message" className="block text-gray-700 text-gray-300 font-medium mb-2">
+                  <label htmlFor="message" className="block text-gray-300 font-medium mb-2">
                     Message
                   </label>
                   <motion.textarea
@@ -318,7 +318,7 @@ const Contact = () => {
                     rows="4"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-pink-200/50 border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all resize-none text-gray-700 text-white placeholder-gray-300 placeholder-gray-500 bg-white bg-gray-800"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all resize-none text-white placeholder-gray-500 bg-gray-800"
                     placeholder="Your message here..."
                     whileFocus={{ scale: 1.01 }}
                   />

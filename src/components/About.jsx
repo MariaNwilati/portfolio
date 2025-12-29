@@ -75,7 +75,7 @@ const About = () => {
             </motion.div>
 
             <motion.p
-              className="text-gray-600 text-gray-300 text-lg leading-relaxed mb-6"
+              className="text-gray-300 text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
               As a Software Engineer and Project Manager, I align business goals with technical
@@ -84,7 +84,7 @@ const About = () => {
               value and strategic goals.
             </motion.p>
             <motion.p
-              className="text-gray-600 text-gray-300 text-lg leading-relaxed mb-6"
+              className="text-gray-300 text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
               I collaborate closely with stakeholders to ensure successful project outcomes, while
@@ -92,7 +92,7 @@ const About = () => {
               products and continuously enhance performance.
             </motion.p>
             <motion.p
-              className="text-gray-500 text-gray-400 text-lg leading-relaxed italic"
+              className="text-gray-400 text-lg leading-relaxed italic"
               variants={itemVariants}
             >
               I am passionate about expanding my knowledge and gaining experience to grow further

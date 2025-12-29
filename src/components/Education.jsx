@@ -90,20 +90,20 @@ const Education = () => {
             whileHover={{ y: -4 }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-white mb-3">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
               Bachelor's Degree in Information Technology
             </h3>
-            <p className="text-pink-500 text-pink-400 font-semibold text-lg mb-4">
+            <p className="text-pink-400 font-semibold text-lg mb-4">
               Specialization in Software Engineering
             </p>
 
-            <div className="flex items-center justify-center gap-6 text-gray-600 text-gray-400 mb-6">
+            <div className="flex items-center justify-center gap-6 text-gray-400 mb-6">
               <span className="font-medium">Damascus University</span>
               <span className="w-1.5 h-1.5 bg-pink-400 rounded-full" />
               <span>5 Years</span>
             </div>
 
-            <p className="text-gray-600 text-gray-400 leading-relaxed max-w-xl mx-auto">
+            <p className="text-gray-400 leading-relaxed max-w-xl mx-auto">
               Completed a comprehensive program in Information Technology with a focus on
               software development, project management, system analysis, and modern programming technologies.
             </p>
