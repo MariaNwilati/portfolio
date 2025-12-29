@@ -197,7 +197,7 @@ const Projects = () => {
 
             {/* Modal Content */}
             <motion.div
-              className="card overflow-hidden shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
@@ -214,7 +214,7 @@ const Projects = () => {
               </button>
 
               {/* Image */}
-              <div className="relative h-64 bg-white dark:bg-gray-700 border-b border-pink-200/50 dark:border-gray-600">
+              <div className="relative h-64 bg-gray-100 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-600">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -226,7 +226,7 @@ const Projects = () => {
               {/* Content */}
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="px-4 py-2 bg-white dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 text-sm font-medium rounded-full border border-pink-200/50 dark:border-transparent">
+                  <span className="px-4 py-2 bg-pink-50 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 text-sm font-medium rounded-full border border-pink-200 dark:border-pink-800">
                     {selectedProject.year}
                   </span>
                 </div>
@@ -250,7 +250,7 @@ const Projects = () => {
                     {selectedProject.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="px-4 py-2 bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-sm rounded-full font-medium border border-pink-200/50 dark:border-transparent"
+                        className="px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full font-medium border border-gray-200 dark:border-gray-600"
                       >
                         {tech}
                       </span>
