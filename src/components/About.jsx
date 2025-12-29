@@ -32,7 +32,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding relative overflow-hidden">
       {/* Subtle Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-50/20 to-transparent dark:from-transparent dark:via-gray-900/30 dark:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/30 to-transparent " />
 
       <motion.div
         ref={ref}
@@ -48,7 +48,7 @@ const About = () => {
           >
             About Me
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mt-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
             Get To Know <span className="text-gradient">Me Better</span>
           </h2>
           <motion.div
@@ -66,7 +66,7 @@ const About = () => {
           >
             {/* Decorative Quote */}
             <motion.div
-              className="absolute -top-4 left-8 text-6xl text-pink-200 dark:text-pink-900/50 font-serif"
+              className="absolute -top-4 left-8 text-6xl text-pink-200  font-serif"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.5 }}
@@ -75,7 +75,7 @@ const About = () => {
             </motion.div>
 
             <motion.p
-              className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6"
+              className="text-gray-600 text-gray-300 text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
               As a Software Engineer and Project Manager, I align business goals with technical
@@ -84,7 +84,7 @@ const About = () => {
               value and strategic goals.
             </motion.p>
             <motion.p
-              className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6"
+              className="text-gray-600 text-gray-300 text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
               I collaborate closely with stakeholders to ensure successful project outcomes, while
@@ -92,7 +92,7 @@ const About = () => {
               products and continuously enhance performance.
             </motion.p>
             <motion.p
-              className="text-gray-500 dark:text-gray-400 text-lg leading-relaxed italic"
+              className="text-gray-500 text-gray-400 text-lg leading-relaxed italic"
               variants={itemVariants}
             >
               I am passionate about expanding my knowledge and gaining experience to grow further
@@ -101,7 +101,7 @@ const About = () => {
 
             {/* Decorative Line */}
             <motion.div
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-pink-300 dark:via-pink-700 to-transparent"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-pink-300  to-transparent"
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : {}}
               transition={{ duration: 1, delay: 0.8 }}

@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Subtle Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-20 left-10 w-[500px] h-[500px] bg-pink-200/20 dark:bg-pink-500/10 rounded-full blur-[100px]"
+          className="absolute top-20 left-10 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[100px]"
           animate={{
             x: [0, 30, 0],
             y: [0, 20, 0],
@@ -31,7 +31,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-rose-200/20 dark:bg-rose-500/10 rounded-full blur-[100px]"
+          className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[100px]"
           animate={{
             x: [0, -20, 0],
             y: [0, -30, 0],
@@ -47,7 +47,7 @@ const Hero = () => {
         {floatingDots.map((dot) => (
           <motion.div
             key={dot.id}
-            className="absolute rounded-full bg-pink-400/30 dark:bg-pink-500/20"
+            className="absolute rounded-full bg-pink-500/20"
             style={{
               width: dot.size,
               height: dot.size,
@@ -78,7 +78,7 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-pink-900/30 rounded-full mb-6 border border-pink-200/50 dark:border-transparent"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-pink-900/30 rounded-full mb-6 border border-transparent"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -88,7 +88,7 @@ const Hero = () => {
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
-              <span className="text-gray-600 dark:text-gray-300 text-sm font-medium">Available for work</span>
+              <span className="text-gray-300 text-sm font-medium">Available for work</span>
             </motion.div>
 
             <motion.h1
@@ -97,12 +97,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <span className="text-gray-800 dark:text-white">Hi, I'm </span>
+              <span className="text-white">Hi, I'm </span>
               <span className="text-gradient">Maria</span>
             </motion.h1>
 
             <motion.h2
-              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-2 font-medium"
+              className="text-xl md:text-2xl text-gray-300 mb-2 font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -112,7 +112,7 @@ const Hero = () => {
 
 
             <motion.p
-              className="text-gray-500 dark:text-gray-400 max-w-lg mb-8 text-lg leading-relaxed"
+              className="text-gray-400 max-w-lg mb-8 text-lg leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -149,8 +149,8 @@ const Hero = () => {
 
               <motion.a
                 href="#projects"
-                className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-semibold rounded-full text-center border border-gray-200 dark:border-gray-700 shadow-sm"
-                whileHover={{ scale: 1.02, backgroundColor: 'rgba(0,0,0,0.02)' }}
+                className="px-8 py-4 bg-gray-800 text-gray-200 font-semibold rounded-full text-center border border-gray-700 shadow-sm"
+                whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.05)' }}
                 whileTap={{ scale: 0.98 }}
               >
                 View Projects
@@ -171,20 +171,20 @@ const Hero = () => {
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
             >
               {/* Subtle Glow Background */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-pink-400/20 to-rose-400/20 dark:from-pink-500/30 dark:to-rose-500/30 rounded-full blur-2xl" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-pink-500/30 to-rose-500/30 rounded-full blur-2xl" />
 
               {/* Main Image Container */}
               <div className="relative w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72">
                 {/* Outer Ring */}
                 <motion.div
-                  className="absolute inset-0 rounded-full border-2 border-pink-200/50 dark:border-pink-500/30"
+                  className="absolute inset-0 rounded-full border-2 border-pink-500/30"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
                 />
 
                 {/* Inner Ring with Gradient */}
                 <div className="absolute inset-2 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-900">
+                  <div className="w-full h-full rounded-full overflow-hidden bg-gray-900">
                     <img
                       src="/images/profile.jpg"
                       alt="Maria Nwilati"

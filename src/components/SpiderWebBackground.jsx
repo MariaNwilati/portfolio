@@ -62,7 +62,7 @@ const SpiderWebBackground = () => {
             x2={`${line.x2}%`}
             y2={`${line.y2}%`}
             stroke="currentColor"
-            className="text-pink-300/10 dark:text-pink-500/10"
+            className="text-pink-500/10"
             strokeWidth="0.5"
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{
@@ -83,7 +83,7 @@ const SpiderWebBackground = () => {
             cx={`${dot.x}%`}
             cy={`${dot.y}%`}
             r={dot.size}
-            className="fill-pink-400/20 dark:fill-pink-500/20"
+            className="fill-pink-500/20"
             initial={{ scale: 0, opacity: 0 }}
             animate={{
               scale: [1, 1.2, 1],

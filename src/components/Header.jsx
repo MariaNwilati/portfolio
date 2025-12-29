@@ -74,8 +74,8 @@ const Header = () => {
                   href={link.href}
                   className={`relative px-4 py-2 rounded-lg font-medium transition-colors duration-300 ${
                     activeSection === link.href.slice(1)
-                      ? 'text-pink-600 dark:text-pink-400'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400'
+                      ? 'text-pink-400'
+                      : 'text-gray-300 hover:text-pink-400'
                   }`}
                 >
                   {link.name}
@@ -101,7 +101,7 @@ const Header = () => {
               <motion.a
                 href="/resume.pdf"
                 download="Maria_Nwilati_CV.pdf"
-                className="text-gray-600 dark:text-gray-300 hover:text-pink-500 font-medium transition-colors flex items-center gap-1.5"
+                className="text-gray-300 hover:text-pink-500 font-medium transition-colors flex items-center gap-1.5"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -133,7 +133,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
             <motion.button
-              className="p-2 text-gray-600 dark:text-gray-300 hover:text-pink-600 relative z-50"
+              className="p-2 text-gray-300 hover:text-pink-600 relative z-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
               whileTap={{ scale: 0.9 }}
@@ -153,7 +153,7 @@ const Header = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="md:hidden fixed inset-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg z-40"
+              className="md:hidden fixed inset-0 bg-gray-900/95 backdrop-blur-lg z-40"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -173,7 +173,7 @@ const Header = () => {
                       className={`text-2xl font-medium transition-colors duration-300 ${
                         activeSection === link.href.slice(1)
                           ? 'text-gradient'
-                          : 'text-gray-600 dark:text-gray-300 hover:text-pink-600'
+                          : 'text-gray-300 hover:text-pink-600'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -190,7 +190,7 @@ const Header = () => {
                   <motion.a
                     href="/resume.pdf"
                     download="Maria_Nwilati_CV.pdf"
-                    className="text-xl text-gray-600 dark:text-gray-300 font-medium flex items-center gap-2"
+                    className="text-xl text-gray-300 font-medium flex items-center gap-2"
                     onClick={() => setIsMenuOpen(false)}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
