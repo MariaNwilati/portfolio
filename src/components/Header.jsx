@@ -100,7 +100,7 @@ const Header = () => {
             >
               <motion.a
                 href="/resume.pdf"
-                download="Maria_Nwilati_CV.pdf"
+                download="Maria-Nwilati-CV.pdf"
                 className="text-gray-300 hover:text-pink-500 font-medium transition-colors flex items-center gap-1.5"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -189,7 +189,7 @@ const Header = () => {
                 >
                   <motion.a
                     href="/resume.pdf"
-                    download="Maria_Nwilati_CV.pdf"
+                    download="Maria-Nwilati-CV.pdf"
                     className="text-xl text-gray-300 font-medium flex items-center gap-2"
                     onClick={() => setIsMenuOpen(false)}
                     whileHover={{ scale: 1.05 }}
