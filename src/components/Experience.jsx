@@ -123,11 +123,11 @@ const Experience = () => {
         <div className="relative max-w-4xl mx-auto">
           {/* Animated Timeline Line */}
           <motion.div
-            className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-pink-400 via-rose-400 to-pink-300"
+            className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1"
             initial={{ scaleY: 0 }}
             animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
-            style={{ originY: 0 }}
+            style={{ background: 'linear-gradient(to bottom, #f48fb1, #f8bbd9)', originY: 0 }}
           />
 
           <div className="space-y-12">
@@ -147,7 +147,8 @@ const Experience = () => {
                   transition={{ delay: 0.5 + index * 0.2, type: 'spring', stiffness: 200 }}
                 >
                   <motion.div
-                    className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-xl shadow-lg"
+                    className="w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg"
+                    style={{ background: 'linear-gradient(135deg, #f48fb1 0%, #f8bbd9 100%)' }}
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     transition={{ duration: 0.5 }}
                   >
