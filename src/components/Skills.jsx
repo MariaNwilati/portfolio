@@ -74,7 +74,7 @@ const Skills = () => {
           >
             My Expertise
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-white mt-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
             Skills & <span className="text-gradient">Technologies</span>
           </h2>
           <motion.div
@@ -89,7 +89,7 @@ const Skills = () => {
           {languages.map((lang, index) => (
             <motion.span
               key={lang.name}
-              className="px-5 py-2.5 rounded-full border border-pink-200/50 border-gray-700/30 text-gray-600 text-gray-300 text-sm font-medium bg-white bg-gray-800/60"
+              className="px-5 py-2.5 rounded-full border border-gray-700/30 text-gray-300 text-sm font-medium bg-gray-800/60"
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 + index * 0.1 }}
@@ -114,10 +114,10 @@ const Skills = () => {
               >
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="w-10 h-10 bg-white bg-gray-700 rounded-lg flex items-center justify-center text-pink-500 text-gray-300 border border-pink-200/50 border-gray-600">
+                  <span className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-pink-500 border border-gray-600">
                     {category.icon}
                   </span>
-                  <h3 className="text-xl font-bold text-gray-800 text-white">
+                  <h3 className="text-xl font-bold text-white">
                     {category.title}
                   </h3>
                 </div>
@@ -127,7 +127,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <motion.span
                       key={skill}
-                      className="px-4 py-2 text-gray-600 text-gray-300 text-sm rounded-full border border-pink-200/50 border-gray-600 hover:border-pink-400 hover:border-pink-500 transition-colors duration-200 cursor-default bg-white bg-gray-700/50"
+                      className="px-4 py-2 text-gray-300 text-sm rounded-full border border-gray-600 hover:border-pink-500 transition-colors duration-200 cursor-default bg-gray-700/50"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : {}}
                       transition={{ delay: 0.4 + categoryIndex * 0.1 + skillIndex * 0.03 }}
