@@ -99,7 +99,7 @@ const Header = () => {
               className="ml-30"
             >
               <motion.a
-                href="/resume.pdf"
+                href="/Assets/MariaNwilatipdf.pdf"
                 download="Maria_Nwilati_CV.pdf"
                 className="text-gray-300 hover:text-pink-500 font-medium transition-colors flex items-center gap-1.5"
                 whileHover={{ scale: 1.02 }}
@@ -188,7 +188,7 @@ const Header = () => {
                   transition={{ delay: 0.5 }}
                 >
                   <motion.a
-                    href="/resume.pdf"
+                    href="/Assets/MariaNwilatipdf.pdf"
                     download="Maria_Nwilati_CV.pdf"
                     className="text-xl text-gray-300 font-medium flex items-center gap-2"
                     onClick={() => setIsMenuOpen(false)}
