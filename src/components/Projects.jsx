@@ -20,9 +20,9 @@ const Projects = () => {
     {
       title: 'Wallets Mobile Application',
       description:
-        'Led and supervised the Wallets mobile application project from business and technical perspective. Oversaw UAT testing, managed change requests, and acted as Product Owner identifying solutions based on UX and market analysis.',
-      technologies: ['Product Owner', 'UAT', 'UI/UX', 'Project Management', 'Mobile App'],
-      role: 'Product Owner & Project Manager',
+        'Led and supervised the Wallets mobile application project from business and technical perspective. Oversaw UAT testing, managed change requests.',
+      technologies: ['Project Management',  'UAT', 'UI/UX', 'Mobile App'],
+      role: 'Project Manager',
       year: '2024 - Present',
       image: '/assets/projects/ewallet.jpeg',
       challenges: [
@@ -72,7 +72,7 @@ const Projects = () => {
       description:
         'Led and supervised integration between Al-Fouad system and more than six banks. Managed full-cycle API-based integrations, oversaw projects end-to-end from planning to production launch.',
       technologies: ['API Integration', 'Banking', 'Project Management', 'Testing', 'Deployment'],
-      role: 'Project Lead',
+      role: 'Project Manager',
       year: '2024 - Present',
       image: '/assets/projects/_.jpeg',
       challenges: [

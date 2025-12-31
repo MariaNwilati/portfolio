@@ -7,7 +7,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Project Manager, Product Owner & UAT Coordinator',
+      title: 'Project Manager, UAT Coordinator',
       company: 'AlFouad Money Transfer',
       duration: '2024 - Present',
       icon: '🏦',
@@ -16,7 +16,7 @@ const Experience = () => {
           name: 'Wallets Mobile Application',
           tasks: [
             'Led and supervised the project from business and technical perspective',
-            'Acted as Product Owner, identifying solutions based on UX and market analysis',
+            'Identifying solutions based on UX and market analysis',
             'Oversaw UAT testing, change requests management, and UI/UX design',
             'Defined project phases, milestones, and priorities',
           ],
