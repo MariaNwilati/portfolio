@@ -68,7 +68,7 @@ const Projects = () => {
       ]
     },
     {
-      title: 'Bank Integration Projects',
+      title: '+6 Banks Integration Projects',
       description:
         'Led and supervised integration between Al-Fouad system and more than six banks. Managed full-cycle API-based integrations, oversaw projects end-to-end from planning to production launch.',
       technologies: ['API Integration', 'Banking', 'Project Management', 'Testing', 'Deployment'],
