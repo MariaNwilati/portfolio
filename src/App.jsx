@@ -16,6 +16,7 @@ function App() {
       <div className="min-h-screen bg-mesh-pink transition-colors duration-300 relative">
         <SpiderWebBackground />
         <Header />
+        
         <main className="relative z-10">
           <Hero />
           <About />
